@@ -13,7 +13,4 @@ class SignController extends GetxController {
   RxBool? login;
   RxString? email;
 
-  Future<String?> username() async {
-    email = (await readuserEmailpref()) as RxString?;
-  }
 }

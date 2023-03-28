@@ -17,13 +17,13 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 2),
+      Duration(seconds: 3),
       () async {
         bool? a = await readlogin();
         if (a != true) {
-          Get.offNamed('up');
+          Get.offNamed('signin');
         } else {
-          Get.offNamed('welcome');
+          Get.offNamed('home');
         }
       },
     );

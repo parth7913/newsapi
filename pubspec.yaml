@@ -21,7 +21,7 @@ version: 1.0.0+1
 environment:
   sdk: '>=2.19.4 <3.0.0'
 
-# Dependencies specify other packages that your package needs in order to work.
+# Dependencies specify other packages that your package needs in order to work.![](../../../../../var/folders/nj/_mk10f7j4v94ds5dtvwjytt80000gn/T/simulator_screenshot_DCBA622C-7392-4F85-BE5B-C837DC337C23.png)
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
 # dependencies can be manually updated by changing the version numbers below to
@@ -93,5 +93,5 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
-  # For details regarding fonts from package dependencies,
+  # For details regarding fonts from package dependencies
   # see https://flutter.dev/custom-fonts/#from-packages

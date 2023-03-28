@@ -6,33 +6,11 @@ void createshere(email, password) async {
   shr.setString('p1', password);
 }
 
-void createusershere(email, password) async {
-  SharedPreferences shr = await SharedPreferences.getInstance();
-  shr.setString('e2', email);
-  shr.setString('p2', password);
-}
-
-
-Future<String?> readuserEmailpref() async {
-  SharedPreferences shr = await SharedPreferences.getInstance();
-  String? email = shr.getString("e2");
-  return email;
-}
-
-Future<String?> reademailpref() async {
+Future<Map<String, String?>> reademailpref() async {
   SharedPreferences shr = await SharedPreferences.getInstance();
   String? email = shr.getString("e1");
-  return email;
-}
-Future<String?> readpasswordpref() async {
-  SharedPreferences shr = await SharedPreferences.getInstance();
   String? password = shr.getString('p1');
-  return password;
-}
-
-void clearpref() async {
-  SharedPreferences shr = await SharedPreferences.getInstance();
-  shr.clear();
+  return {'email': email, 'password': password};
 }
 
 void alreadylogin(boolian) async {
